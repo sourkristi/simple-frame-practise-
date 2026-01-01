@@ -1,0 +1,61 @@
+/* izveido gradient, kas ir background */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg,
+         #460101 10%,      
+         #000000 40%,     
+         #000000 75%);
+}
+
+body {
+  font-family: "Verdana", monospace;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.frame {
+  font-family: "Courier Prime", monospace;
+  background-color: #1a1915;
+  border: 4px solid #460101;
+  width: 900px;
+  display: grid;
+  grid-template-columns: 250px 1fr 200px;
+  gap: 10px;
+}
+
+.left img {
+  border: 4px solid #460101;
+  width: 100%;
+  display: block;
+}
+
+.center {
+  border: 4px solid #460101;
+  font-size: 14px;
+  margin-right: auto;
+  padding: 15px;
+  margin: 10px 4px 10px 10px;
+}
+
+.center h4, p{
+  color:#dbcaad;
+}
+.center h4 {
+  text-align: center;
+}
+
+.center p{
+  text-align: left;
+}
+
+.third{
+  border: 4px solid #460101;
+  text-align: center;
+}
+
+::selection { background: rgba(97, 4, 4, 0.384); }
